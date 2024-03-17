@@ -1,0 +1,160 @@
+/* Base styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #e8e8e8, #e8e8e8);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header styles */
+header {
+    position: relative;
+    background: linear-gradient(to right, #2c2c2c, #000000);
+    background-size: cover;
+    color: #f2f2f2;
+    padding: 100px 0;
+    text-align: center;
+}
+
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+    animation: fadeInUp 1s ease;
+    padding: 1%;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    animation: fadeInUp 1s ease;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Section styles */
+section {
+    padding: 50px 0;
+}
+
+section h2 {
+    text-align: center;
+    animation: fadeInUp 1s ease;
+}
+
+/* Products section styles */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation: fadeInUp 1s ease;
+}
+
+.product {
+    width: 250px;
+    margin: 20px;
+    padding: 15px;
+    background: linear-gradient(to bottom, #ffffff, #f2f2f2);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.product h3 {
+    margin: 0;
+}
+
+.product p {
+    margin: 10px 0;
+}
+
+/* Footer styles */
+footer {
+    background: linear-gradient(to right, #333333, #1a1a1a);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    animation: fadeInUp 1s ease;
+}
+
+/* Contact section styles */
+/* Contact section styles */
+#contact {
+    background: linear-gradient(to bottom, #f4f4f4, #dcdcdc);
+    padding: 50px 0;
+}
+
+.location {
+    text-align: center;
+    margin: 20px;
+}
+.contact-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.person {
+    text-align: center;
+    margin: 20px;
+
+
+}
+
+.person img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.person h3 {
+    margin: 0;
+}
+
+.person h4 {
+    margin: 5px 0;
+    color: #373737;
+}
+
+
+
+/* Keyframe animations */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
